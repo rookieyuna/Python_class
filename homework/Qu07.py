@@ -11,7 +11,7 @@
 '''
 
 for i in range(5):
-    for j in range(10):
+    for j in range(9):
         if j<4-i:
             print(' ', end='')
         elif j<5+i:
