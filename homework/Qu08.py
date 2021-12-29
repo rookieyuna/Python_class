@@ -13,8 +13,6 @@ for i in range(5):
     for j in range(10):
         if j<i:
             print(' ', end='')
-        elif j<9-(2*i)+i:
+        elif j<9-i:
             print('*', end='')
     print()
-    
-    

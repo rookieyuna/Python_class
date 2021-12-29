@@ -14,6 +14,17 @@ for i in range(5):
     for j in range(10):
         if j<4-i:
             print(' ', end='')
-        elif j<4-i+1+(2*i):
+        elif j<5+i:
             print('*', end='')
     print()
+    
+    
+'''
+i   j            별출력조건
+0  0~3       4        <5
+1  0~2      4,5       <6
+2  0~1     4,5,6      <7
+3  0      4,5,6,7     <8
+4        4,5,6,7,8    <9
+   j<4-i             j<5+i    
+'''
