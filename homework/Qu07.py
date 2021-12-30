@@ -28,3 +28,14 @@ i   j            별출력조건
 4        4,5,6,7,8    <9
    j<4-i             j<5+i    
 '''
+
+#SB
+for i in range(5):
+    for j in range(5):
+        if(i+j>=4):
+            print('*', end='')
+            if(j+i>=5):
+                print('*', end='')
+        else:
+            print(' ',end='')
+    print()
