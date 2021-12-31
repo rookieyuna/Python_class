@@ -107,3 +107,6 @@ def upper_generator(val):
 fruits = ['apple', 'pear', 'grape', 'pineapple', 'orange']
 for i in upper_generator(fruits): #리스트의 인자만큼 반복호출
     print(i, end=' ') #=APPLE PEAR GRAPE PINEAPPLE ORANGE
+    
+    
+    
