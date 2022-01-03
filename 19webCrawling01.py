@@ -1,5 +1,13 @@
 
-#s_content > div.section > ul > li:nth-child(1) > dl > dt
+'''
+[requests]
+=>웹사이트의 정보를 가져오기 위한 파이썬 라이브러리
+=> cmd에 'pip3 install requests' 입력 
+    
+[BeautifulSoup ]
+=> HTML정보로 부터 원하는 데이터를 가져오기 쉽게, 비슷한 분류의 데이터별로 나누어주는(parsing) 파이썬 라이브러리
+=> cmd에 'pip3 install beautifulsoup4' 입력
+'''
 
 import requests
 from bs4 import BeautifulSoup
@@ -19,6 +27,7 @@ if response.status_code == 200: #응답코드가200일때
     #텍스트만 추출
     text = title1_1.get_text()
     #print("추출2:", text)
+    
     
     ul = soup.select_one('ul.basic1')
     print("추출3:", ul)

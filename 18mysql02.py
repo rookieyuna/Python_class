@@ -5,6 +5,7 @@ import pymysql
 conn = pymysql.connect(host='localhost', user='kosmo_user', 
     password='1234', db='kosmo_db', charset='utf8')
 
+#커서생성
 curs = conn.cursor()
 sql = f"""INSERT INTO board (title, content, id) 
     VALUES ('{input('제목:')}', '{input('내용:')}', 'kosmo')"""
